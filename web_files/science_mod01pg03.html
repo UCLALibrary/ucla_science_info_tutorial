@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Author" content="UCLA Library" />
+<meta name="Description" content="University of California, Los Angeles: Science Information Life Cycle" />
+<title>Science Information Life Cycle</title>
+<link href="styles/science_info.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript" src="scripts/navigation.js"></script>
+</head>
+<body>
+<!--PAGE-->
+<div id="pageContainer">
+
+<!-- CREATIVE COMMONS LOGO -->
+<div id="cc_logo">
+	<a rel="license" href="http://www.lib.uci.edu/licenses/license-ucilibs-find-science-info-tutorial.html" target="_blank"><img alt="Creative Commons License" height="31" width="88"  src="http://www.lib.uci.edu/images/logo-creative-commons-byncsa.png" /></a>
+</div>
+
+<!-- HEADER -->
+<div id="header">
+	<a href="http://www.library.ucla.edu" target="_blank"><img src="styles/ucla banner.jpg" width="900" height="93" alt="UCLA Library" /></a>
+</div><!--#header-->
+
+<!--LEFT CONTAINER-->
+<div id="leftContainer">
+    <div id="leftnav">
+    </div><!--#leftnav-->
+</div><!--#leftContainer-->
+
+<!--MAIN CONTAINER-->
+<div id="mainContainer">
+
+<div id="topnav">
+    <a href="index.html" id="home" title="Go to Home Page">Home</a>
+    <a href="science_mod01pg01.html" id="module01" title="Go to Produce Module">Produce</a>
+    <a href="science_mod02pg01.html" id="module02" title="Go to Share Module">Share</a>
+    <a href="science_mod03pg01.html" id="module03" title="Go to Organize Module">Organize</a>
+    <a href="science_mod04pg01.html" id="module04" title="Go to Find Module">Find</a>
+    <a href="science_mod05pg01.html" id="module05" title="Go to Use Module">Use</a>
+</div><!--#topnav-->
+
+<!-- MAIN CONTENT -->
+<div id="mainContent">
+
+<!-- PAGE NAV -->
+<div id="pagenav">
+	<a href="javascript.html" id="prev_url" title="Previous Page"><img src="styles/prev_off.jpg" alt="Previous Page" name="prev" width="16" height="15" id="prev_img" /></a> 
+	<span id="pagenum">00 of 00</span>
+    <a href="javascript.html" id="next_url" title="Next Page"><img src="styles/next_off.jpg" alt="Next Page" name="next" width="16" height="15" id="next_img" /></a>
+</div><!--#pagenav-->
+
+<h2>What is Science?</h2>
+<div id="drag-and-drop" class="floatRight" style="width:390px; height:400px; margin-left:20px">
+<div style="float:left; width:160px; padding-top:40px">
+  <span id="draggable1" class="draggable-intext">Faith</span><br />
+  <span id="draggable2" class="draggable-intext">Hope</span><br />
+  <span id="draggable3" class="draggable-intext">Logic</span><br />
+  <span id="draggable4" class="draggable-intext">Attitude</span><br />
+  <span id="draggable5" class="draggable-intext">Mathematics</span><br />
+  <span id="draggable6" class="draggable-intext">Feelings</span><br />
+  <span id="draggable7" class="draggable-intext">Hypothesis</span><br />
+  <span id="draggable8" class="draggable-intext">Skepticism</span>
+</div>
+<div style="float:right;width:200px">
+<strong>Not Domain of Science</strong>
+<div id="droppable1" class="droppable-field" style="height:120px; margin-bottom:20px">
+</div>
+<strong>Domain of Science</strong>
+<div id="droppable2" class="droppable-field" style="height:120px">
+</div>
+</div>
+</div>
+<p>Science is:</p>
+
+<ul>
+  <li>evidence based.  </li>
+  <li>objective.  </li>
+  <li>based on a defined method for acquiring, creating, and sharing knowledge. </li>
+</ul>
+<p>So what is in the domain of science? <em>Drag the words into the categories &ldquo;Domain of Science&rdquo; and &ldquo;Not Domain of Science&rdquo;.</em></p>
+</div><!--#mainContent-->
+<!--MAIN CONTENT END-->
+
+</div><!--#mainContainer-->
+</div><!--#pageContainer-->
+<script type="text/javascript">
+$(document).ready(function(e) {
+		var currentText = "error";
+		$( "#draggable1" ).draggable({ revert: "invalid" });
+		$( "#draggable2" ).draggable({ revert: "invalid" });
+		$( "#draggable3" ).draggable({ revert: "invalid" });
+		$( "#draggable4" ).draggable({ revert: "invalid" });
+		$( "#draggable5" ).draggable({ revert: "invalid" });
+		$( "#draggable6" ).draggable({ revert: "invalid" });
+		$( "#draggable7" ).draggable({ revert: "invalid" });
+		$( "#draggable8" ).draggable({ revert: "invalid" });
+		
+		$( "#droppable1" ).droppable({
+			accept: '#draggable1, #draggable2, #draggable4, #draggable6',
+			drop: function( event, ui ) {
+				currentText = ui.draggable.html();
+				ui.draggable.css('visibility','hidden');
+				$(this).append('<p>' + currentText + '</p>');
+			}
+		});
+		$( "#droppable2" ).droppable({
+			accept: '#draggable3, #draggable5, #draggable7, #draggable8',
+			drop: function( event, ui ) {
+				currentText = ui.draggable.html();
+				ui.draggable.css('visibility','hidden');
+				$(this).append('<p>' + currentText + '</p>');
+			}
+		});
+});
+</script>
+</body>
+</html>

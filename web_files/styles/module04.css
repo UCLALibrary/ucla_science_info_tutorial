@@ -1,0 +1,30 @@
+@charset "utf-8";
+#leftContainer {
+	background-image: url(leftnav_mod04.jpg);
+}
+#mainContent h2 {
+	color: #E88C00;
+}
+#topnav  #module04{
+	background-image: url(topnav_mod04_active.jpg);
+}
+#leftContainer p {
+	color: #E88C00;
+	border-bottom-color: #E88C00;
+}
+#leftnav a.active {
+	color: #E88C00;
+}
+#mainContent .callout .top {
+	background-image: url(callout_top_mod04.jpg);
+}
+#mainContent .callout .bottom {
+	background-image: url(callout_bottom_mod04.jpg);
+}
+#mainContent .callout .middle {
+	background-image: url(callout_middle_mod04.jpg);
+	color: #FFF;
+}
+#mainContent .callout a {
+	color: #FFEACA;
+}

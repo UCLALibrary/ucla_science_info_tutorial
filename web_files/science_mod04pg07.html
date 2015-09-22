@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Author" content="UCLA Library" />
+<meta name="Description" content="University of California, Los Angeles: Science Information Life Cycle" />
+<title>Science Information Life Cycle</title>
+<link href="styles/science_info.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript" src="scripts/navigation.js"></script>
+<style type="text/css">
+#mainContent #drag-and-drop .droppable-field {
+	height:22px; 
+	width:140px; 
+	float:left; 
+	margin:5px 0px 5px 0px;
+	padding:0px 3px;
+	clear:both;
+	text-align:center;
+}
+#mainContent #drag-and-drop .droppable-field-desc {
+	display: block;
+	margin:5px;
+	padding:3px;
+	float:left;
+	width:450px;
+}
+#mainContent #drag-and-drop .draggable-field {
+	width: 144px;
+	margin:0px 5px 5px 0px;
+
+}
+</style>
+</head>
+<body>
+<!--PAGE-->
+<div id="pageContainer">
+
+<!-- CREATIVE COMMONS LOGO -->
+<div id="cc_logo">
+	<a rel="license" href="http://www.lib.uci.edu/licenses/license-ucilibs-find-science-info-tutorial.html" target="_blank"><img alt="Creative Commons License" height="31" width="88"  src="http://www.lib.uci.edu/images/logo-creative-commons-byncsa.png" /></a>
+</div>
+
+<!-- HEADER -->
+<div id="header">
+	<a href="http://www.library.ucla.edu" target="_blank"><img src="styles/ucla banner.jpg" width="900" height="93" alt="UCLA Library" /></a>
+</div><!--#header-->
+
+<!--LEFT CONTAINER-->
+<div id="leftContainer">
+    <div id="leftnav">
+    </div><!--#leftnav-->
+</div><!--#leftContainer-->
+
+<!--MAIN CONTAINER-->
+<div id="mainContainer">
+
+<div id="topnav">
+    <a href="index.html" id="home" title="Go to Home Page">Home</a>
+    <a href="science_mod01pg01.html" id="module01" title="Go to Produce Module">Produce</a>
+    <a href="science_mod02pg01.html" id="module02" title="Go to Share Module">Share</a>
+    <a href="science_mod03pg01.html" id="module03" title="Go to Organize Module">Organize</a>
+    <a href="science_mod04pg01.html" id="module04" title="Go to Find Module">Find</a>
+    <a href="science_mod05pg01.html" id="module05" title="Go to Use Module">Use</a>
+</div><!--#topnav-->
+
+<!-- MAIN CONTENT -->
+<div id="mainContent">
+
+<!-- PAGE NAV -->
+<div id="pagenav">
+	<a href="javascript.html" id="prev_url" title="Previous Page"><img src="styles/prev_off.jpg" alt="Previous Page" name="prev" width="16" height="15" id="prev_img" /></a> 
+	<span id="pagenum">00 of 00</span>
+    <a href="javascript.html" id="next_url" title="Next Page"><img src="styles/next_off.jpg" alt="Next Page" name="next" width="16" height="15" id="next_img" /></a>
+</div><!--#pagenav-->
+
+<h2>Find  Science Articles in Library Databases</h2>
+<p>The  essential science and engineering article databases  are listed below. <em>  Click each one to view the database. Click and drag each one to the matching description.</em></p>
+<div id="drag-and-drop"  >
+<div>
+    <span id="draggable2" class="draggable-field"><a href="http://www.arxiv.org/" target="_blank">arXiv</a></span>
+    <span id="draggable7" class="draggable-field"><a href="http://www.cdlib.org/services/collections/scifinder/index.html" target="_blank">SciFinder</a></span>
+    <span id="draggable4" class="draggable-field"><a href="http://uclibs.org/PID/1537" target="_blank">Compendex</a></span>
+    <span id="draggable5" class="draggable-field"><a href="http://uclibs.org/PID/113272" target="_blank">PubMed</a></span>
+    <span id="draggable1" class="draggable-field"><a href="http://uclibs.org/PID/12610" target="_blank">Web of Science</a></span>
+    <span id="draggable6" class="draggable-field"><a href="http://uclibs.org/PID/5796" target="_blank">MathSciNet</a></span>
+    <span id="draggable3" class="draggable-field"><a href="http://uclibs.org/PID/100004" target="_blank">BIOSIS Previews</a></span>  
+</div>
+<div style="float:left; margin: 16px 0px 10px 20px;">
+    <div id="droppable1" class="droppable-field" ></div>
+    <div class="droppable-field-desc">Contains articles from all areas of science</div>
+    <div id="droppable2" class="droppable-field" ></div>
+    <div class="droppable-field-desc">Find  articles on physics, astronomy, math and more here</div>
+    <div id="droppable3" class="droppable-field" ></div><div class="droppable-field-desc">Primary  resource for biology articles and conference proceedings</div>
+    <div id="droppable4" class="droppable-field" ></div>
+    <div class="droppable-field-desc">Find engineering journal articles and conference proceedings here</div>
+    <div id="droppable5" class="droppable-field" ></div>
+    <div class="droppable-field-desc">Extensive database for medical science articles</div>
+    <div id="droppable7" class="droppable-field" ></div><div class="droppable-field-desc">Find all types of information about chemistry here </div>
+    <div id="droppable6" class="droppable-field" ></div>
+    <div class="droppable-field-desc">Primary  database for mathematics articles</div>
+</div>
+
+
+</div>
+<p style="clear:both; padding-top:10px">The  links to these databases can also be found in the UCLA Library's <a href="http://guides.library.ucla.edu/index.php" target="_blank">research guides</a>. These research guides will provide you with additional subject resources. You can also search and browse our full list of databases in our <a href="http://guides.library.ucla.edu/az.php" target="_blank">A-Z database list</a>. </p>
+</div>
+<!--#mainContent-->
+<!--MAIN CONTENT END-->
+
+</div><!--#mainContainer-->
+</div><!--#pageContainer-->
+<script type="text/javascript">
+$(document).ready(function(e) {
+		var currentText = "error";
+		$( "#draggable1" ).draggable({ revert: "invalid" });
+		$( "#draggable2" ).draggable({ revert: "invalid" });
+		$( "#draggable3" ).draggable({ revert: "invalid" });
+		$( "#draggable4" ).draggable({ revert: "invalid" });
+		$( "#draggable5" ).draggable({ revert: "invalid" });
+		$( "#draggable6" ).draggable({ revert: "invalid" });
+		$( "#draggable7" ).draggable({ revert: "invalid" });
+		
+		$( "#droppable1" ).droppable({
+			accept: '#draggable1',
+			drop: function( event, ui ) {
+				currentText = ui.draggable.html();
+				ui.draggable.css('visibility','hidden');
+				$(this).append('<p>' + currentText + '</p>');
+			}
+		});
+		$( "#droppable2" ).droppable({
+			accept: '#draggable2',
+			drop: function( event, ui ) {
+				currentText = ui.draggable.html();
+				ui.draggable.css('visibility','hidden');
+				$(this).append('<p>' + currentText + '</p>');
+			}
+		});
+		$( "#droppable3" ).droppable({
+			accept: '#draggable3',
+			drop: function( event, ui ) {
+				currentText = ui.draggable.html();
+				ui.draggable.css('visibility','hidden');
+				$(this).append('<p>' + currentText + '</p>');
+			}
+		});
+		$( "#droppable4" ).droppable({
+			accept: '#draggable4',
+			drop: function( event, ui ) {
+				currentText = ui.draggable.html();
+				ui.draggable.css('visibility','hidden');
+				$(this).append('<p>' + currentText + '</p>');
+			}
+		});
+		$( "#droppable5" ).droppable({
+			accept: '#draggable5',
+			drop: function( event, ui ) {
+				currentText = ui.draggable.html();
+				ui.draggable.css('visibility','hidden');
+				$(this).append('<p>' + currentText + '</p>');
+			}
+		});
+		$( "#droppable6" ).droppable({
+			accept: '#draggable6',
+			drop: function( event, ui ) {
+				currentText = ui.draggable.html();
+				ui.draggable.css('visibility','hidden');
+				$(this).append('<p>' + currentText + '</p>');
+			}
+		});
+		$( "#droppable7" ).droppable({
+			accept: '#draggable7',
+			drop: function( event, ui ) {
+				currentText = ui.draggable.html();
+				ui.draggable.css('visibility','hidden');
+				$(this).append('<p>' + currentText + '</p>');
+			}
+		});
+});
+</script>
+</body>
+</html>

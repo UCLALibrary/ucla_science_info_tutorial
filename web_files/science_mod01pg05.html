@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Author" content="UCLA Library" />
+<meta name="Description" content="University of California, Los Angeles: Science Information Life Cycle" />
+<title>Science Information Life Cycle</title>
+<link href="styles/science_info.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript" src="scripts/navigation.js"></script>
+<style type="text/css">
+.droppable-field {
+	height:96px; 
+	width:96px; 
+	float:left; 
+	margin-bottom:20px;
+}
+</style>
+</head>
+<body>
+<!--PAGE-->
+<div id="pageContainer">
+
+<!-- CREATIVE COMMONS LOGO -->
+<div id="cc_logo">
+	<a rel="license" href="http://www.lib.uci.edu/licenses/license-ucilibs-find-science-info-tutorial.html" target="_blank"><img alt="Creative Commons License" height="31" width="88"  src="http://www.lib.uci.edu/images/logo-creative-commons-byncsa.png" /></a>
+</div>
+
+<!-- HEADER -->
+<div id="header">
+	<a href="http://www.library.ucla.edu" target="_blank"><img src="styles/ucla banner.jpg" width="900" height="93" alt="UCLA Library" /></a>
+</div><!--#header-->
+
+<!--LEFT CONTAINER-->
+<div id="leftContainer">
+    <div id="leftnav">
+    </div><!--#leftnav-->
+</div><!--#leftContainer-->
+
+<!--MAIN CONTAINER-->
+<div id="mainContainer">
+
+<div id="topnav">
+    <a href="index.html" id="home" title="Go to Home Page">Home</a>
+    <a href="science_mod01pg01.html" id="module01" title="Go to Produce Module">Produce</a>
+    <a href="science_mod02pg01.html" id="module02" title="Go to Share Module">Share</a>
+    <a href="science_mod03pg01.html" id="module03" title="Go to Organize Module">Organize</a>
+    <a href="science_mod04pg01.html" id="module04" title="Go to Find Module">Find</a>
+    <a href="science_mod05pg01.html" id="module05" title="Go to Use Module">Use</a>
+</div><!--#topnav-->
+
+<!-- MAIN CONTENT -->
+<div id="mainContent">
+
+<!-- PAGE NAV -->
+<div id="pagenav">
+	<a href="javascript.html" id="prev_url" title="Previous Page"><img src="styles/prev_off.jpg" alt="Previous Page" name="prev" width="16" height="15" id="prev_img" /></a> 
+	<span id="pagenum">00 of 00</span>
+    <a href="javascript.html" id="next_url" title="Next Page"><img src="styles/next_off.jpg" alt="Next Page" name="next" width="16" height="15" id="next_img" /></a>
+</div><!--#pagenav-->
+
+<h2>Steps in the Scientific Method</h2>
+<p><em>Please drag &amp; drop the correct steps of the scientific method  into the proper order. When the correct position is chosen, the answer will  &quot;stick&quot;.</em></p>
+<div id="drag-and-drop" style="margin-top:20px" >
+<div style="float:left; width:130px;">  
+  <span id="draggable3" class="draggable-field">Perform<br />
+experiment(s)</span><br />
+  <span id="draggable6" class="draggable-field">Share results</span><br />
+  <span id="draggable4" class="draggable-field">Analyze the data</span><br />
+  <span id="draggable1" class="draggable-field">Research the topic</span><br />
+  <span id="draggable5" class="draggable-field">Accept / redevelop hypothesis</span><br />
+  <span id="draggable2" class="draggable-field">Formulate a hypothesis</span><br />
+</div>
+<div style="float:right;width:510px">
+<div class="droppable-field">
+<h3>Step 1</h3>
+<p>Ask a question</p>
+</div>
+<div id="droppable1" class="droppable-field">
+<h3>Step 2</h3>
+</div>
+<div id="droppable2" class="droppable-field">
+<h3>Step 3</h3>
+</div>
+<div id="droppable3" class="droppable-field">
+<h3>Step 4</h3>
+</div>
+<div id="droppable4" class="droppable-field">
+<h3>Step 5</h3>
+</div>
+<div id="droppable5" class="droppable-field">
+<h3>Step 6</h3>
+</div>
+<div id="droppable6" class="droppable-field">
+<h3>Step 7</h3>
+</div>
+
+
+</div>
+</div>
+</div>
+<!--#mainContent-->
+<!--MAIN CONTENT END-->
+
+</div><!--#mainContainer-->
+</div><!--#pageContainer-->
+<script type="text/javascript">
+$(document).ready(function(e) {
+		var currentText = "error";
+		$( "#draggable1" ).draggable({ revert: "invalid" });
+		$( "#draggable2" ).draggable({ revert: "invalid" });
+		$( "#draggable3" ).draggable({ revert: "invalid" });
+		$( "#draggable4" ).draggable({ revert: "invalid" });
+		$( "#draggable5" ).draggable({ revert: "invalid" });
+		$( "#draggable6" ).draggable({ revert: "invalid" });
+		
+		$( "#droppable1" ).droppable({
+			accept: '#draggable1',
+			drop: function( event, ui ) {
+				currentText = ui.draggable.html();
+				ui.draggable.css('visibility','hidden');
+				$(this).append('<p>' + currentText + '</p>');
+			}
+		});
+		$( "#droppable2" ).droppable({
+			accept: '#draggable2',
+			drop: function( event, ui ) {
+				currentText = ui.draggable.html();
+				ui.draggable.css('visibility','hidden');
+				$(this).append('<p>' + currentText + '</p>');
+			}
+		});
+		$( "#droppable3" ).droppable({
+			accept: '#draggable3',
+			drop: function( event, ui ) {
+				currentText = ui.draggable.html();
+				ui.draggable.css('visibility','hidden');
+				$(this).append('<p>' + currentText + '</p>');
+			}
+		});
+		$( "#droppable4" ).droppable({
+			accept: '#draggable4',
+			drop: function( event, ui ) {
+				currentText = ui.draggable.html();
+				ui.draggable.css('visibility','hidden');
+				$(this).append('<p>' + currentText + '</p>');
+			}
+		});
+		$( "#droppable5" ).droppable({
+			accept: '#draggable5',
+			drop: function( event, ui ) {
+				currentText = ui.draggable.html();
+				ui.draggable.css('visibility','hidden');
+				$(this).append('<p>' + currentText + '</p>');
+			}
+		});
+		$( "#droppable6" ).droppable({
+			accept: '#draggable6',
+			drop: function( event, ui ) {
+				currentText = ui.draggable.html();
+				ui.draggable.css('visibility','hidden');
+				$(this).append('<p>' + currentText + '</p>');
+			}
+		});
+});
+</script>
+</body>
+</html>

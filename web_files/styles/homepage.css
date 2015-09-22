@@ -1,0 +1,50 @@
+@charset "utf-8";
+#topnav {
+	float: right;
+	margin-bottom: 6px;
+}
+#topnav #home {
+	background-image: url(topnav_home_active.jpg);
+}
+/* CSS Document */
+
+#homeText {
+	width: 500px;
+	float: right;
+	font-family: "Courier New", Courier, monospace;
+	margin: 0px 20px 0px 0px;
+}
+/* CSS Document */
+
+#homeText p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #222;
+	line-height: 1.4;
+	margin-bottom: 20px;
+}
+
+#homeCycle {
+	width: 330px;
+	float: left;
+	overflow: visible;
+	height: 330px;
+	margin: 120px 0px 0px 20px;
+}
+#homeText a {
+	text-decoration: none;
+	color: #154182;
+}
+
+
+#homeText a:hover {
+	text-decoration: underline;
+}
+#homeText p.homeList {
+	margin-left: 30px;
+	font-style: italic;
+	font-weight: bold;
+}
+#homeCycle .homeImage {
+	position: absolute;
+}
